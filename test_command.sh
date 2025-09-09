@@ -37,8 +37,8 @@ assert_dir "lab1_1"
 assert_dir  "lab1_1/hello_linux"
 assert_file "lab1_1/hello_linux/hello.txt"
 
-# 3) tmp directory still exists, but tmp.txt has been moved out
-assert_dir    "lab1_1/tmp"
+# 3) tmp directory is removed and tmp.txt has been moved out
+assert_nodir  "lab1_1/tmp"
 assert_nofile "lab1_1/tmp/tmp.txt"
 
 # 4) work/tmp.txt exists and contains "tmp" (newline allowed)
