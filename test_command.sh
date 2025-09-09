@@ -33,8 +33,9 @@ assert_file_allow_newline() {
 # 1) lab1_1 exists at repository root
 assert_dir "lab1_1"
 
-# 2) hello_linux directory exists under lab1_1
-assert_dir "lab1_1/hello_linux"
+# 2) hello_linux directory + hello.txt
+assert_dir  "lab1_1/hello_linux"
+assert_file "lab1_1/hello_linux/hello.txt"
 
 # 3) tmp directory still exists, but tmp.txt has been moved out
 assert_dir    "lab1_1/tmp"
