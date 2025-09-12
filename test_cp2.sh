@@ -1,6 +1,7 @@
 #!/bin/bash
 
 cd $LAB_HOME
+export LC_ALL=C
 
 REFERENCE_BINARY="cp"
 TEST_BINARY="./cp2"
